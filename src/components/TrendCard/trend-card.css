@@ -1,0 +1,28 @@
+.trend-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color:var(--cardColor);
+    padding: 1rem;
+    padding-left: 2rem;
+    border-radius:1rem;
+}
+
+.trend-card_item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.trend-card_item > span {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.trend-card_item > div {
+    font-size: 14px;
+}
+
+.trend-card_item > div > span {
+    color: orange;
+}

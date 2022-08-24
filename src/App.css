@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+    --yellow: #f5c32c;
+    --orange: #fca61f;
+    --black: #242d49;
+    --gray: rgba(36, 45, 73, 0.65);
+    --profileShadow: 0px 4px 17px 2px rgba(0, 0, 0, 0.25);
+    --hrColor: #cfcdcd;
+    --cardColor: rgba(255, 255, 255, 0.64);
+    --buttonBg: linear-gradient(98.63deg, #f9a225 0%, #f95f35 100%);
+    --inputColor: rgba(40, 52, 62, 0.07);
+    --photo: #4cb256;
+    --video: #4a4eb7;
+    --location: #ef5757;
+    --shedule: #e1ae4a;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html,
+body {
+    height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.app {
+    color: var(--black);
+    background: #f3f3f3;
+    overflow: hidden;
+    padding: 0 1rem 0;
+}
+
+.blur {
+    position: fixed;
+    width: 28rem;
+    height: 16rem;
+    border-radius: 50%;
+    filter: blur(72px);
+    background: #a6bbf0;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+    background: var(--buttonBg);
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    border: 2px solid var(--orange);
+    transition: all 0.2s ease-out;
+}
+
+.button:hover {
+    color: var(--orange);
+    background: transparent;
+    border: 2px solid var(--orange);
+}
+
+.button:disabled {
+    pointer-events: none;
+    background: silver;
+    border: 2px solid silver;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }

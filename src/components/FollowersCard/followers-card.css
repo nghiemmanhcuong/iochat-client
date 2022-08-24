@@ -1,0 +1,51 @@
+.followers-card {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    border-radius:0.7rem;
+}
+
+.followers-card_item {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.followers-card_item > div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.followers-card_item_img > a > img {
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius:50%;
+    object-fit: center;
+}
+
+.followers-card_item_name {
+    display: flex;
+    flex-direction: column;
+}
+
+.followers-card_item_name > a > span:nth-child(1) {
+    font-weight: bold;
+}
+
+.fc-button {
+    height: 2rem;
+    padding: 0 20px;
+}
+
+.fc-unfollow {
+    background: silver;
+    border: 2px solid silver;
+}
+
+.fc-unfollow:hover {
+    border: 2px solid silver;
+}
+

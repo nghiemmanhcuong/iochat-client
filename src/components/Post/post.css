@@ -1,0 +1,49 @@
+.post {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: var(--cardColor);
+    gap: 1rem;
+}
+
+.post > img {
+    height: auto;
+    max-height: 37rem;
+    object-fit:cover;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.post_react {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 1.5rem;
+}
+
+.post_react > img {
+    cursor: pointer;
+}
+
+.post_detail_header > a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+}
+
+.post_detail_header > a > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100rem;
+    margin-right: 5px;
+}
+
+.post_detail_header > a > h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.post_detail > span {
+    font-size: 15px;
+}

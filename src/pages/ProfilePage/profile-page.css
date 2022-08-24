@@ -1,0 +1,14 @@
+.profile-page {
+    position: relative;
+    display: grid;
+    grid-template-columns: 24rem auto 26rem;
+    gap: 3rem;
+    max-height:100vh;
+    overflow: hidden;
+}
+
+.profile-page_center {
+    padding-top: 1rem;  
+    overflow:scroll;
+    max-height:100vh;
+}

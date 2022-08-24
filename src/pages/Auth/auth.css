@@ -1,0 +1,118 @@
+.auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 4rem;
+    position: relative;
+}
+
+.auth > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth_left {
+    gap: 2rem;
+}
+
+.auth_left > img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.auth_right_auth-form {
+    background-color: var(--cardColor);
+    border-radius:1rem;
+    padding: 1rem 2rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    gap: 2rem;
+}
+
+.auth_left_name > h1 {
+    font-size: 3rem;
+    background-color:red;
+    background-image:var(--buttonBg);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color:transparent;
+    margin-bottom: 10px;
+}
+
+.auth_left_name > h6 {
+    font-size:1rem;
+    font-weight: 600;
+}
+
+.auth_right_form > div {
+    display:flex;
+    gap: 1rem;
+    height: 2.4rem;
+    width: 100%;
+}
+
+.auth_right_profile-form > div {
+    height: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.auth_right_profile-form > h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth_right_form > h3 {
+    font-size: 24px;
+}
+
+.auth_right_form_input {
+    border:none;
+    outline: none;
+    background-color: var(--inputColor);
+    padding: 26px;
+    flex: 1;
+    border-radius:8px;
+    font-size: 14px;
+}
+
+.auth_right_form_text {
+    font-size: 14px;
+}
+
+.auth_right_form_text > div > span {
+    color: blue;
+    cursor: pointer;
+}
+
+.profile-modal_button,
+.auth_right_form_btn {
+    width: 50%;
+    height: 2.6rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -1rem;
+}
+
+.auth_right_form-login {
+    min-width:470px;
+}
+
+.auth_right_form-login > div > input,
+.auth_right_form-login > div {
+    width: 100%;
+}
+
+.auth_right_form-login .auth_right_form_input {
+    padding: 20px 26px;
+}
+
+.auth_right_form-login .auth_right_form_text {
+    margin-top: -1rem;
+}

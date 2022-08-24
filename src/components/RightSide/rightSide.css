@@ -1,0 +1,24 @@
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+.right-side_nav {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 1rem;
+}
+
+.right-side_nav > a > img,
+.right-side_nav > img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.r-button {
+    height: 3rem;
+    align-self: center;
+    width: 80%;
+}
